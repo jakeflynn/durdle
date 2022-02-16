@@ -8,15 +8,15 @@
 </head>
 <body>
     <div class="content">
-        <h1 id="header">Durdle</h1>
+        <h1 id="header">D u r d l e</h1>
 
         <!-- MTG Icons -->
-        <div class="center">
-            <img class="sm-icon" src="images/240px-MTG_(W).png" />
-            <img class="sm-icon" src="images/240px-MTG_(B).png" />
-            <img class="sm-icon" src="images/240px-MTG_(R).png" />
-            <img class="sm-icon" src="images/240px-MTG_(G).png" />
-            <img class="sm-icon" src="images/240px-MTG_(U).png" />
+        <div id="icons" class="center">
+            <img class="sm-icon sm-icon-noguess" src="images/240px-MTG_(W).png" />
+            <img class="sm-icon sm-icon-noguess" src="images/240px-MTG_(B).png" />
+            <img class="sm-icon sm-icon-noguess" src="images/240px-MTG_(R).png" />
+            <img class="sm-icon sm-icon-noguess" src="images/240px-MTG_(G).png" />
+            <img class="sm-icon sm-icon-noguess" src="images/240px-MTG_(U).png" />
         </div>
         <br />
 
@@ -29,9 +29,24 @@
                     <th>Color</th>
                     <th>Mana Cost</th>
                     <th>Set</th>
-                    <th>Block</th>
+                    <th>Artist</th>
+                </tr>
+                <tr id="blank-row" class="answer-row">
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
                 </tr>
             </table>
+        </div>
+        <br />
+
+        <!-- Answer Box -->
+        <div class="input-box center">
+            <input type="text" id="pGuess" name="pGuess" value="Enter a card name..." />
+            <input type="submit" id="btnGuess" value="Guess" />
         </div>
     </div>
 </body>
