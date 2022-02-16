@@ -1,0 +1,41 @@
+body {
+    background-color: #0e2f44;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    min-width: 100px;
+}
+
+#header {
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+#table-header {
+    background-color: #071722;
+}
+
+.content {
+    margin: auto;
+    width: 50%;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+.sm-icon {
+    max-width: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 5px solid #071722;
+    margin: 10px;
+}
