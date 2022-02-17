@@ -9,3 +9,6 @@ setTimeout(() => { bt.setNextWrong() }, 3000);
 setTimeout(() => { bt.setNextWrong() }, 4000);
 setTimeout(() => { bt.setNextWrong() }, 5000);
 setTimeout(() => { bt.setNextRight() }, 6000);
+
+//this one shouldn't do anything
+setTimeout(() => { bt.setNextRight() }, 7000);
