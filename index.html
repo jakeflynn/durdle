@@ -1,52 +1,57 @@
 <!DOCTYPE html>
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/durdle.css" />
-    <title>Durdle: Wordle for Mana Dorks</title>
-</head>
-<body>
-    <div class="content">
-        <h1 id="header">D u r d l e</h1>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/durdle.css" />
+        <title>Durdle: Wordle for Mana Dorks</title>
+    </head>
+    <body>
+        <div class="content">
 
-        <!-- MTG Icons -->
-        <div id="icons" class="center">
-            <img class="sm-icon sm-icon-noguess" src="images/240px-MTG_(W).png" />
-            <img class="sm-icon sm-icon-noguess" src="images/240px-MTG_(B).png" />
-            <img class="sm-icon sm-icon-noguess" src="images/240px-MTG_(R).png" />
-            <img class="sm-icon sm-icon-noguess" src="images/240px-MTG_(G).png" />
-            <img class="sm-icon sm-icon-noguess" src="images/240px-MTG_(U).png" />
-        </div>
-        <br />
+            <script type="module" src="./src/DurdleGame.js"></script>
 
-        <!-- Viewport -->
-        <div class="center">
-            <table>
-                <tr id="table-header">
-                    <th></th>
-                    <th>Type</th>
-                    <th>Color</th>
-                    <th>Mana Cost</th>
-                    <th>Set</th>
-                    <th>Artist</th>
-                </tr>
-                <tr id="blank-row" class="answer-row">
-                    <td><div></div></td>
-                    <td><div></div></td>
-                    <td><div></div></td>
-                    <td><div></div></td>
-                    <td><div></div></td>
-                    <td><div></div></td>
-                </tr>
-            </table>
-        </div>
-        <br />
+            <h1 id="header">D u r d l e</h1>
 
-        <!-- Answer Box -->
-        <div class="input-box center">
-            <input type="text" id="pGuess" name="pGuess" value="Enter a card name..." />
-            <input type="submit" id="btnGuess" value="Guess" />
+            <!-- MTG Icons -->
+            <div id="icons" class="center">
+                <img class="sm-icon sm-icon-noguess" src="images/240px-MTG_(W).png" />
+                <img class="sm-icon sm-icon-noguess" src="images/240px-MTG_(B).png" />
+                <img class="sm-icon sm-icon-noguess" src="images/240px-MTG_(R).png" />
+                <img class="sm-icon sm-icon-noguess" src="images/240px-MTG_(G).png" />
+                <img class="sm-icon sm-icon-noguess" src="images/240px-MTG_(U).png" />
+            </div>
+            <br />
+
+            <!-- Viewport -->
+            <div class="center">
+                <table>
+                    <tr id="table-header">
+                        <th></th>
+                        <th>Type</th>
+                        <th>Color</th>
+                        <th>Mana Cost</th>
+                        <th>Set</th>
+                        <th>Artist</th>
+                    </tr>
+                    <tr id="blank-row" class="answer-row">
+                        <td><div></div></td>
+                        <td><div></div></td>
+                        <td><div></div></td>
+                        <td><div></div></td>
+                        <td><div></div></td>
+                        <td><div></div></td>
+                    </tr>
+                </table>
+            </div>
+            <br />
+
+            <!-- Answer Box -->
+            <div class="input-box center">
+                <input type="text" id="pGuess" name="pGuess" value="Enter a card name..." />
+                <input type="submit" id="btnGuess" value="Guess" />
+            </div>
         </div>
-    </div>
-</body>
+    </body>
+</html>
